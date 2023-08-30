@@ -76,18 +76,13 @@ input {
   border-radius: 10px;
   outline: none;
   border: 1px solid gray;
-  width: 100%; /* Make the input fields occupy the full width */
 }
 
 /* Media query for screens with a maximum width of 600px */
 @media (max-width: 600px) {
-  .search-outstanding {
-    flex-direction: column; /* Stack items vertically on small screens */
-  }
-  
   /* Adjust spacing for smaller screens */
   input {
-    margin: 5px 0;
+    width: 75px;
   }
 }
 
@@ -111,7 +106,7 @@ input {
   <div class="container">
     <h5> Outstanding</h5>
     <div class="search-outstanding">
-      <input type="text" id="searchParty" list="Outstanding" placeholder="Search party">
+      <input type="text" id="searchParty" list="Outstanding" placeholder="Party">
       <datalist id="Outstanding">
         <option value="ABC">
         <option value="MNC">
@@ -122,10 +117,10 @@ input {
         <option value="Abc">
       </datalist>
       <div>
-        From: <input type="date">
+        <input type="date">
       </div>
       <div>
-        To :<input type="date">
+        <input type="date">
       </div>
 
     </div>
